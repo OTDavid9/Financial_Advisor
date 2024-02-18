@@ -398,7 +398,8 @@ dnspython==2.5.0
 email-validator==2.1.0.post1
 executing==2.0.1
 faiss-cpu==1.7.4
-fastapi==0.109.2
+# fastapi==0.109.2
+fastapi==0.85.1
 filelock==3.13.1
 Flask==3.0.1
 flatbuffers==23.5.26
