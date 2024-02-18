@@ -153,6 +153,7 @@ starlette==0.36.3
 streamlit==1.31.1
 streamlit-chat==0.1.1
 sympy==1.12
+sqlite3 == 3.35.0.
 tenacity==8.2.3
 tiktoken==0.5.2
 tokenizers==0.15.2
@@ -181,3 +182,4 @@ Werkzeug==3.0.1
 wrapt==1.16.0
 yarl==1.9.4
 zipp==3.17.0
+# RuntimeError: Your system has an unsupported version of sqlite3. Chroma                     requires sqlite3 >= 3.35.0.
