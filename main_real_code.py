@@ -60,11 +60,16 @@ splits = splits1 + splits2
 vectordb = Chroma.from_documents(
     documents=splits,
     embedding=gemini_embeddings,
-   
+    persist_directory="./chroma_db"  # Directory to save data
+)
+# Load the persisted vector store from disk
+vectorstore_disk = Chroma(
+    persist_directory="./chroma_db",
+    embedding_function=gemini_embeddings
 )
 
 # Retrieve from vectorstore
-retriever = vectordb.as_retriever(search_kwargs={"k": 100000})
+retriever = vectorstore_disk.as_retriever(search_kwargs={"k": 100000})
 
 # Define the prompt template for generating questions
 _template = """Given the following conversation and a follow-up question, rephrase the follow-up question to be a 
