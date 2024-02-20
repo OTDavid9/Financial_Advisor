@@ -128,7 +128,7 @@ Pygments==2.17.2
 pypdf==4.0.1
 PyPika==0.48.9
 pyproject_hooks==1.0.0
-pysqlite3-binary >= 0.0.0, <= 2.0.0
+pysqlite3-binary==3.35.0.
 pyreadline3==3.4.1
 python-dateutil==2.8.2
 python-dotenv==1.0.1
